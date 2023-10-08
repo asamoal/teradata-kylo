@@ -11,7 +11,7 @@
   </parent>
   <properties>
     <plugin.license.parentRelative>../../../../../</plugin.license.parentRelative>
-    <nifi.cache-client.version>1.2.0</nifi.cache-client.version>
+    <nifi.cache-client.version>1.14.0</nifi.cache-client.version>
   </properties>
   <packaging>jar</packaging>
 

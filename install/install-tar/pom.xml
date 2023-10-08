@@ -305,13 +305,16 @@
           </execution>
         </executions>
       </plugin>
-      <plugin>
+<!--       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>license-maven-plugin</artifactId>
         <configuration>
           <excludedGroups>(?x)
             # Kylo
             ^com\.thinkbiganalytics\.
+          </excludedGroups>
+          <excludedGroups>(?x)
+            ^org\.picketbox\.
           </excludedGroups>
           <fileTemplate>${project.build.directory}/generated-sources/license/THIRD-PARTY.ftl</fileTemplate>
         </configuration>
@@ -323,7 +326,7 @@
             </goals>
           </execution>
         </executions>
-      </plugin>
+      </plugin> -->
 
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>

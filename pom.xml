@@ -226,7 +226,7 @@
       <id>central</id>
       <name>Maven Repository Switchboard</name>
       <layout>default</layout>
-      <url>http://repo1.maven.org/maven2</url>
+      <url>https://repo1.maven.org/maven2</url>
       <snapshots>
         <enabled>false</enabled>
       </snapshots>
@@ -234,7 +234,7 @@
     <repository>
       <id>spring-milestones</id>
       <name>Spring Milestones</name>
-      <url>https://repo.spring.io/libs-milestone</url>
+      <url>https://nexus.xebialabs.com/nexus/content/groups/public</url>
       <snapshots>
         <enabled>false</enabled>
       </snapshots>
@@ -258,13 +258,13 @@
 
   <scm>
     <connection>
-      scm:git:https://github.com/Teradata/kylo.git
+      scm:git:https://github.com/asamoal/teradata-kylo.git
     </connection>
     <developerConnection>
-      scm:git:https://github.com/Teradata/kylo.git
+      scm:git:https://github.com/asamoal/teradata-kylo.git
     </developerConnection>
     <tag>HEAD</tag>
-    <url>https://github.com/Teradata/kylo</url>
+    <url>https://github.com/asamoal/teradata-kylo</url>
   </scm>
 
   <dependencyManagement>
@@ -1095,6 +1095,7 @@
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
+      <version>4.13.1</version>
       <scope>test</scope>
     </dependency>
     <!-- Logging -->
@@ -1459,6 +1460,24 @@
         <nifi.version>1.6.0</nifi.version>
       </properties>
     </profile>
+    <profile>
+      <id>nifi.version.1.14.0</id>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
+      <properties>
+        <nifi.version>1.14.0</nifi.version>
+      </properties>
+    </profile>
+    <profile>
+      <id>nifi.version.1.16.2</id>
+      <activation>
+        <activeByDefault>false</activeByDefault>
+      </activation>
+      <properties>
+        <nifi.version>1.16.2</nifi.version>
+      </properties>
+    </profile>
 
     <profile>
       <!-- This profile will add the MapR repository for resolving
@@ -1468,7 +1487,7 @@
         <repository>
           <id>mapr-releases</id>
           <name>MapR Repository</name>
-          <url>http://repository.mapr.com/maven/</url>
+          <url>https://repository.mapr.com/maven/</url>
           <snapshots>
             <enabled>false</enabled>
           </snapshots>
