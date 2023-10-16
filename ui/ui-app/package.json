@@ -82,7 +82,7 @@
     "angular-router-loader": "0.8.5",
     "angular2-template-loader": "0.6.2",
     "babel-core": "^6.26.0",
-    "babel-eslint": "^8.0.3",
+    "babel-eslint": "^10.1.0",
     "babel-loader": "^7.1.2",
     "babel-plugin-syntax-dynamic-import": "^6.18.0",
     "babel-preset-env": "^1.6.1",
